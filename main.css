@@ -1,0 +1,110 @@
+body{
+  margin:0;
+}
+#cont{
+  width:800px;
+  height:200px;
+  margin:auto;
+  margin-top:100px;
+  overflow:hidden;
+  position:relative;
+  -webkit-animation-name: cont; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+  animation-name: cont;
+  animation-duration: 6s;
+}
+#conttwo{
+  width:800px;
+  height:200px;
+  margin:0px;
+  margin:auto;
+  margin-top:10px;
+  background-color:#99ccff;
+  display:none;
+
+  -webkit-animation-name: player; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+}
+#playertwo{
+  z-index:-10;
+  opacity:.1;
+}
+#player{
+  opacity:1;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select:none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  pointer-events: none;
+  -webkit-animation-name: player; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+  animation-name: player;
+  animation-duration: 6s;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes cont {
+    0%   {width:800px;height:200px;}
+    25%  {width:800px;height:600px;}
+    50%  {width:300px;height:600px;}
+    100% {width:800px;height:200px;}
+}
+
+@keyframes cont {
+    0%   {width:800px;height:200px;}
+    25%  {width:800px;height:600px;}
+    50%  {width:300px;height:600px;}
+    100% {width:800px;height:200px;}
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes player {
+    0%   {width:800px;height:450px;margin-top:-125px;}
+    25%  {width:1066.66666px;height:600px;margin-left:-133.333px;margin-top:0px;}
+    50%  {width:1066.66666px;height:600px;margin-left:-383.333px;margin-top:0px;}
+    100% {width:800px;height:450px;margin-top:-125px;}
+  
+}
+
+@keyframes player {
+    0%   {width:800px;height:450px;margin-top:-125px;}
+    25%  {width:1066.66666px;height:600px;margin-left:-133.333px;margin-top:0px;}
+    50%  {width:1066.66666px;height:600px;margin-left:-383.333px;margin-top:0px;}
+    100% {width:800px;height:450px;margin-top:-125px;}
+  
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes main {
+    0%   {opacity:0;}
+    85%  {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes main {
+    0%   {opacity:0;}
+    85%  {opacity:0;}
+    100% {opacity:1;}
+}
+#main{
+  margin:auto;
+  -webkit-animation-name: player; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+  animation-name: main;
+  animation-duration: 6s;
+  color:#6c6c6c;
+  text-align:center;
+  opacity:1;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select:none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  pointer-events: none;
+}
